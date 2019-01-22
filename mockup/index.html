@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Social Network</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster|Quicksand:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main__header">
+        <h1 class="logo">Social Network</h1>
+        <div class="search__bar">
+          <img src="./images/search.png" alt="" class="search__icon" />
+          <input type="text" class="search__input" placeholder="Search..." />
+        </div>
+        <div class="controls">
+          <div class="control__wrapper">
+            <img src="./images/lang.png" alt="" class="control" />
+          </div>
+          <div class="control__wrapper messages">
+            <img src="./images/chat.png" alt="" class="control" />
+          </div>
+          <div class="control__wrapper">
+            <img src="./images/user.png" alt="" class="control" />
+          </div>
+        </div>
+      </header>
+      <nav class="nav__bar left__nav">
+        <div class="nav__list">
+          <p class="title">Menu</p>
+          <a href="#" class="list__item list__item--active">Home</a>
+          <a href="#" class="list__item">Projects</a>
+          <a href="#" class="list__item">My Network</a>
+          <a href="#" class="list__item">Events</a>
+        </div>
+        <div class="nav__list">
+          <p class="title list__item">Your Favorites</p>
+          <p class="list__item">...</p>
+        </div>
+      </nav>
+      <div id="contentWrapper" class="content__wrapper">
+        <div class="content">
+          <header class="profile__header profile__section">
+            <img src="./images/banner.jpg" class="profile__banner" />
+            <h1 class="profile__name">John Smith</h1>
+            <img
+              id="profileAvatar"
+              src="./images/avatar.png"
+              alt=""
+              class="profile__avatar"
+            />
+            <nav class="profile__nav">
+              <div class="profile__nav__container">
+                <a href="#" class="profile__nav__link">About</a>
+              </div>
+              <div class="profile__nav__container">
+                <a href="#" class="profile__nav__link">Skills</a>
+              </div>
+              <div class="profile__nav__container">
+                <a href="#" class="profile__nav__link">Projects</a>
+              </div>
+              <div class="profile__nav__container">
+                <a href="#" class="profile__nav__link">Contact</a>
+              </div>
+              <div class="profile__nav__container">
+                <a href="#" class="profile__nav__link">Activity</a>
+              </div>
+            </nav>
+          </header>
+          <div class="profile__about profile__section">
+            <div class="profile__section__header">About Me</div>
+            <div class="details details--wide">
+              <div class="detail">Web Developer @ Acme Inc.</div>
+              <div class="detail">31 Years Old</div>
+              <div class="detail">Lives in Boston, MA</div>
+              <div class="detail">(555) 123-4567</div>
+              <div class="detail">guy@email.com</div>
+            </div>
+          </div>
+          <div class="profile__skills profile__section">
+            <div class="profile__section__header">My Skills</div>
+          </div>
+          <div class="profile__projects profile__section">
+            <div class="profile__section__header">My Projects</div>
+          </div>
+          <div class="profile__contact profile__section">
+            <div class="profile__section__header">Contact Me</div>
+          </div>
+          <div class="profile__activity profile__section">
+            <div class="profile__section__header">My Activity</div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+      </div>
+      <div class="nav__bar right__nav">
+        <div class="nav__list">
+          <p class="title">Messaging</p>
+          <div class="contact">
+            <img class="contact__image" src="./images/c1.png" alt="" />
+            <p class="contact__name">John Smith</p>
+            <div class="contact__status online"></div>
+          </div>
+
+          <div class="contact">
+            <img class="contact__image" src="./images/c2.png" alt="" />
+            <p class="contact__name">Abel Townsend</p>
+            <div class="contact__status online"></div>
+          </div>
+
+          <div class="contact">
+            <img class="contact__image" src="./images/c3.png" alt="" />
+            <p class="contact__name">Patty Clark</p>
+            <div class="contact__status online"></div>
+          </div>
+
+          <div class="contact">
+            <img class="contact__image" src="./images/c4.png" alt="" />
+            <p class="contact__name">Rebecca Shuester</p>
+            <div class="contact__status offline"></div>
+          </div>
+
+          <div class="contact">
+            <img class="contact__image" src="./images/c5.png" alt="" />
+            <p class="contact__name">Emily Fielding</p>
+            <div class="contact__status offline"></div>
+          </div>
+
+          <div class="contact">
+            <img class="contact__image" src="./images/c6.png" alt="" />
+            <p class="contact__name">Amanda Burress</p>
+            <div class="contact__status offline"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
