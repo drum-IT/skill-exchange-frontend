@@ -5,6 +5,7 @@ import Highlight from './Highlight';
 
 const HighlightListStyles = styled.div`
   .highlight__list {
+    margin-right: 55px;
     margin-top: 20px;
     display: grid;
     grid-gap: 30px;

@@ -10,6 +10,8 @@ const HeaderStyles = styled.div`
   padding-left: 30px;
   height: 85px;
   border-bottom: 1px solid var(--black);
+  z-index: 100;
+  position: relative;
   .header__title {
     font-size: 1.8rem;
     font-weight: 500;
@@ -58,6 +60,11 @@ const HeaderStyles = styled.div`
   .profile__image {
     height: 100%;
     width: 100%;
+  }
+  @media only screen and (max-width: 785px) {
+    .header__search {
+      display: none;
+    }
   }
 `;
 

@@ -16,7 +16,7 @@ const SignupStyles = styled.div`
     background: white;
     padding: 20px;
     border-radius: 5px;
-    width: 350px;
+    min-width: 350px;
   }
   .form__header {
     display: grid;
@@ -59,6 +59,7 @@ const SignupStyles = styled.div`
     font-weight: 600;
     outline: none;
     cursor: pointer;
+    background: white;
   }
   .btn:active {
     box-shadow: inset 0 1px 5px var(--lightgrey);

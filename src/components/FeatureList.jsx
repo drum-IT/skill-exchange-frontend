@@ -5,6 +5,7 @@ import Feature from './Feature';
 
 const FeatureListStyles = styled.div`
   margin-bottom: 50px;
+  margin-right: 55px;
   .feature__list {
     margin-top: 20px;
     display: grid;

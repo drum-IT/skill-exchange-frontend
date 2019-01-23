@@ -80,6 +80,22 @@ const MenuStyles = styled.div`
     color: var(--black);
     background: white;
   }
+  @media only screen and (max-width: 990px) {
+    .logo__container h1 {
+      font-size: 1.4rem;
+      padding-left: 10px;
+    }
+    .menu__list {
+      margin-left: 10px;
+    }
+    .menu__list__item {
+      height: 30px;
+      margin-right: 20px;
+      border-radius: 5px;
+      margin-left: -5px;
+      padding-left: 5px;
+    }
+  }
 `;
 
 export default function Menu(props) {

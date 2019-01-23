@@ -31,6 +31,11 @@ const BodyStyles = styled.div`
     font-weight: 700;
     color: var(--black);
   }
+  @media only screen and (max-width: 680px) {
+    .body {
+      align-items: center;
+    }
+  }
 `;
 
 export default function Body(props) {

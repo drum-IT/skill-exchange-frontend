@@ -11,6 +11,9 @@ const HomeStyles = styled.div`
   height: 100vh;
   width: 100vw;
   background: white;
+  @media only screen and (max-width: 990px) {
+    grid-template-columns: 100px auto;
+  }
 `;
 
 export default function Home(props) {
