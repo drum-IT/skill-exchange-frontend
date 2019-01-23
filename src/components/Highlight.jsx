@@ -26,10 +26,10 @@ const HighlightStyles = styled.div`
   .highlight__image {
     height: 100%;
     object-fit: cover;
-    transition: height 250ms ease-out;
+    transition: all 250ms ease-out;
   }
   /* :hover .highlight__info > .highlight__image__wrapper > .highlight__image {
-    height: 105%;
+    transform: scale(1.1);
   }
   :hover .highlight__info .highlight__details > .highlight__name {
     color: var(--blue);
