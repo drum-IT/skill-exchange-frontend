@@ -17,7 +17,7 @@ const MenuStyles = styled.div`
   .menu__list__body {
     display: grid;
     grid-auto-flow: row;
-    grid-gap: 5px;
+    grid-gap: 10px;
     margin-top: 10px;
   }
   .logo__container {

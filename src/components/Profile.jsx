@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import ProfileSettings from './ProfileSettings';
 
 const ProfileStyles = styled.div`
   display: grid;
@@ -129,7 +130,9 @@ export default class Profile extends Component {
             </button>
           </div>
         </div>
-        <div className="profile__settings">settings</div>
+        <div className="profile__settings">
+          <ProfileSettings user={user} section={section} />
+        </div>
       </ProfileStyles>
     );
   }

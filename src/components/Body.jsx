@@ -27,6 +27,7 @@ const BodyStyles = styled.div`
     flex-direction: column;
     padding: 30px;
     width: 100%;
+    box-sizing: border-box;
   }
   .section__title {
     font-size: 2rem;

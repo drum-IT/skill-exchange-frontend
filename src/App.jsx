@@ -14,7 +14,8 @@ class App extends Component {
         lastName: faker.name.lastName(),
         email: faker.internet.email(),
         avatar: faker.image.people(),
-        title: faker.name.jobTitle()
+        title: faker.name.jobTitle(),
+        phone: faker.phone.phoneNumber()
       },
       path: 'home',
       subpath: undefined,
@@ -29,6 +30,8 @@ class App extends Component {
   signUp(user) {
     const newUser = { ...user };
     newUser.avatar = faker.image.avatar();
+    newUser.phone = faker.phone.phoneNumber();
+    newUser.title = faker.name.jobTitle();
     this.setState({ path: 'home', subpath: undefined, user: newUser });
   }
 
@@ -38,6 +41,7 @@ class App extends Component {
     existingUser.lastName = faker.name.firstName();
     existingUser.avatar = faker.image.avatar();
     existingUser.title = faker.name.jobTitle();
+    existingUser.phone = faker.phone.phoneNumber();
     this.setState({ path: 'home', subpath: undefined, user: existingUser });
   }
 
