@@ -5,7 +5,7 @@ const FeatureStyles = styled.div`
   align-items: center;
   cursor: pointer;
   background: white;
-  border: 1px solid var(--lightestgrey);
+  /* border: 1px solid var(--lightestgrey); */
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   display: flex;

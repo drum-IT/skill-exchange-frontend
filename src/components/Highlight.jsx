@@ -29,9 +29,6 @@ const HighlightStyles = styled.div`
     object-fit: cover;
     transition: all 250ms ease-out;
   }
-  :hover {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  }
   :hover .highlight__info .highlight__details > .highlight__name {
     color: var(--blue);
   }
@@ -77,7 +74,7 @@ export default function Highlight(props) {
         </div>
       </div>
       <div className="highlight__stats">
-        <span>{`Status: ${status}`}</span>
+        <span>{`${status}`}</span>
         <span>{`${members} members`}</span>
       </div>
     </HighlightStyles>

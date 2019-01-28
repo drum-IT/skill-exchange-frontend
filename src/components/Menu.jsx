@@ -134,14 +134,14 @@ export default function Menu(props) {
             <button
               type="button"
               className={`menu__list__item ${subpath === 'projects' ? 'active__item' : undefined}`}
-              onClick={() => changePath('projects', true, 'Project Marketplace')}
+              onClick={() => changePath('projects', true, 'Project Catalog')}
             >
               Projects
             </button>
             <button
               type="button"
               className={`menu__list__item ${subpath === 'skills' ? 'active__item' : undefined}`}
-              onClick={() => changePath('skills', true, 'Skill Marketplace')}
+              onClick={() => changePath('skills', true, 'Skill Catalog')}
             >
               Skills
             </button>

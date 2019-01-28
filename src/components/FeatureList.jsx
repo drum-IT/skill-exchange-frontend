@@ -17,9 +17,9 @@ const FeatureListStyles = styled.div`
 
 export default function FeatureList() {
   const features = [
-    { name: 'New Projects', image: faker.image.transport() },
-    { name: 'Looking for Members', image: faker.image.technics() },
-    { name: 'In Demand Skills', image: faker.image.nature() }
+    { name: 'New Projects', image: faker.image.animals() },
+    { name: 'Looking for Members', image: faker.image.animals() },
+    { name: 'In Demand Skills', image: faker.image.animals() }
   ];
   return (
     <FeatureListStyles>

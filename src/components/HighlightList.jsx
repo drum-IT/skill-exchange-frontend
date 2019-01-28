@@ -14,37 +14,14 @@ const HighlightListStyles = styled.div`
 `;
 
 export default function HighlightList() {
-  const statuses = ['In Progress', 'Planning', 'On Hold', 'Completed'];
-  const highlights = [
-    {
-      name: faker.commerce.productName(),
-      image: faker.image.animals(),
-      about: faker.company.catchPhrase(),
-      members: Math.floor(Math.random() * 100) + 1,
-      status: statuses[Math.floor(Math.random() * (statuses.length - 1))]
-    },
-    {
-      name: faker.commerce.productName(),
-      image: faker.image.business(),
-      about: faker.company.catchPhrase(),
-      members: Math.floor(Math.random() * 100) + 1,
-      status: statuses[Math.floor(Math.random() * (statuses.length - 1))]
-    },
-    {
-      name: faker.commerce.productName(),
-      image: faker.image.city(),
-      about: faker.company.catchPhrase(),
-      members: Math.floor(Math.random() * 100) + 1,
-      status: statuses[Math.floor(Math.random() * (statuses.length - 1))]
-    },
-    {
-      name: faker.commerce.productName(),
-      image: faker.image.food(),
-      about: faker.company.catchPhrase(),
-      members: Math.floor(Math.random() * 100) + 1,
-      status: statuses[Math.floor(Math.random() * (statuses.length - 1))]
-    }
-  ];
+  const statuses = ['In Progress', 'Planning', 'On Hold', 'Completed', 'Looking for Members'];
+  const highlights = new Array(10).fill(undefined).map(element => ({
+    name: faker.commerce.productName(),
+    image: faker.image.cats(),
+    about: faker.company.catchPhrase(),
+    members: Math.floor(Math.random() * 100) + 1,
+    status: statuses[Math.floor(Math.random() * statuses.length)]
+  }));
   return (
     <HighlightListStyles>
       <span className="section__title">Featured Projects</span>

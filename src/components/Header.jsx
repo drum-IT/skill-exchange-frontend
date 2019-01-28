@@ -57,7 +57,8 @@ const HeaderStyles = styled.div`
   }
   .profile__image {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
+    object-fit: cover;
   }
   @media only screen and (max-width: 785px) {
     .header__search {
