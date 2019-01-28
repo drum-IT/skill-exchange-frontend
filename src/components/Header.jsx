@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import faker from 'faker';
-import avatar from '../assets/images/avatar.png';
 
 const HeaderStyles = styled.div`
   grid-area: head;

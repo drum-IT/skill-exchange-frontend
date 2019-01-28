@@ -19,42 +19,28 @@ export default function HighlightList() {
     {
       name: faker.commerce.productName(),
       image: faker.image.animals(),
-      about: faker.lorem.sentence(),
-      members: Math.floor(Math.random() * 100) + 1,
-      status: statuses[Math.floor(Math.random() * (statuses.length - 1))]
-    },
-    {
-      name: faker.commerce.productName(),
-      image: faker.image.abstract(),
-      about: faker.lorem.sentence(),
+      about: faker.company.catchPhrase(),
       members: Math.floor(Math.random() * 100) + 1,
       status: statuses[Math.floor(Math.random() * (statuses.length - 1))]
     },
     {
       name: faker.commerce.productName(),
       image: faker.image.business(),
-      about: faker.lorem.sentence(),
+      about: faker.company.catchPhrase(),
       members: Math.floor(Math.random() * 100) + 1,
       status: statuses[Math.floor(Math.random() * (statuses.length - 1))]
     },
     {
       name: faker.commerce.productName(),
-      image: faker.image.cats(),
-      about: faker.lorem.sentence(),
+      image: faker.image.city(),
+      about: faker.company.catchPhrase(),
       members: Math.floor(Math.random() * 100) + 1,
       status: statuses[Math.floor(Math.random() * (statuses.length - 1))]
     },
     {
       name: faker.commerce.productName(),
       image: faker.image.food(),
-      about: faker.lorem.sentence(),
-      members: Math.floor(Math.random() * 100) + 1,
-      status: statuses[Math.floor(Math.random() * (statuses.length - 1))]
-    },
-    {
-      name: faker.commerce.productName(),
-      image: faker.image.nightlife(),
-      about: faker.lorem.sentence(),
+      about: faker.company.catchPhrase(),
       members: Math.floor(Math.random() * 100) + 1,
       status: statuses[Math.floor(Math.random() * (statuses.length - 1))]
     }
@@ -70,6 +56,7 @@ export default function HighlightList() {
             about={highlight.about}
             members={highlight.members}
             status={highlight.status}
+            key={highlight.name}
           />
         ))}
       </div>

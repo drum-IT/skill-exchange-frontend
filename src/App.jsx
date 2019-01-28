@@ -9,7 +9,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      user: undefined,
+      user: {
+        firstName: faker.name.firstName(),
+        lastName: faker.name.lastName(),
+        email: faker.internet.email(),
+        avatar: faker.image.people(),
+        title: faker.name.jobTitle()
+      },
       path: 'home',
       subpath: undefined,
       location: 'Dashboard'
@@ -29,7 +35,9 @@ class App extends Component {
   signIn(user) {
     const existingUser = { ...user };
     existingUser.firstName = faker.name.firstName();
+    existingUser.lastName = faker.name.firstName();
     existingUser.avatar = faker.image.avatar();
+    existingUser.title = faker.name.jobTitle();
     this.setState({ path: 'home', subpath: undefined, user: existingUser });
   }
 

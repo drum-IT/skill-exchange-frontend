@@ -5,7 +5,7 @@ import Body from './Body';
 
 const HomeStyles = styled.div`
   display: grid;
-  grid-template-columns: 300px auto;
+  grid-template-columns: 275px auto;
   grid-auto-flow: column;
   grid-template-areas: 'menu body';
   height: 100vh;

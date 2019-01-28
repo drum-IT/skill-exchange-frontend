@@ -5,8 +5,10 @@ import FeatureList from './FeatureList';
 import HighlightList from './HighlightList';
 import Signin from './Signin';
 import Signup from './Signup';
+import Profile from './Profile';
 
 const BodyStyles = styled.div`
+  background: var(--offwhite);
   display: grid;
   flex-direction: column;
   grid-area: body;
@@ -52,6 +54,12 @@ export default function Body(props) {
     content = <Signin changePath={changePath} signIn={signIn} />;
   } else if (subpath === 'signup') {
     content = <Signup changePath={changePath} signUp={signUp} />;
+  } else if (subpath === 'myProfile') {
+    content = (
+      <div className="body">
+        <Profile user={user} />
+      </div>
+    );
   }
   return (
     <BodyStyles>

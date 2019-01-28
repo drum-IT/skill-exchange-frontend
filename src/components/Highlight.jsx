@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HighlightStyles = styled.div`
-  background: white;
-  /* border: 1px solid var(--lightestgrey); */
-  border-bottom: 1px solid var(--lightestgrey);
-  /* border-radius: 5px; */
+  /* border-bottom: 1px solid var(--lightestgrey); */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 100ms;
   cursor: pointer;
   .highlight__info {
     margin-bottom: 20px;
@@ -24,16 +24,17 @@ const HighlightStyles = styled.div`
     justify-content: center;
   }
   .highlight__image {
+    pointer-events: none;
     height: 100%;
     object-fit: cover;
-    transition: height 250ms ease-out;
+    transition: all 250ms ease-out;
   }
-  /* :hover .highlight__info > .highlight__image__wrapper > .highlight__image {
-    height: 105%;
+  :hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
   :hover .highlight__info .highlight__details > .highlight__name {
     color: var(--blue);
-  } */
+  }
   .highlight__details {
     display: grid;
     grid-gap: 10px;
@@ -46,7 +47,7 @@ const HighlightStyles = styled.div`
     font-weight: 700;
     color: var(--black);
   }
-  .hightlight__about {
+  .highlight__about {
     font-size: 1.6rem;
     color: var(--black);
   }
@@ -72,7 +73,7 @@ export default function Highlight(props) {
         </div>
         <div className="highlight__details">
           <div className="highlight__name">{name}</div>
-          <div className="hightlight__about">{about}</div>
+          <div className="highlight__about">{about}</div>
         </div>
       </div>
       <div className="highlight__stats">
