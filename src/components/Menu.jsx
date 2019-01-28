@@ -68,6 +68,7 @@ const MenuStyles = styled.div`
     border-radius: 5px;
     margin-left: -10px;
     padding-left: 10px;
+    transition: all 100ms;
   }
   .menu__list__item:hover {
     background: rgba(255, 255, 255, 0.2);

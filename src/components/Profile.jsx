@@ -57,6 +57,7 @@ const ProfileStyles = styled.div`
     font-size: 1.4rem;
     font-weight: 500;
     outline: none;
+    transition: all 100ms;
   }
   .active__control {
     background: var(--blue);
