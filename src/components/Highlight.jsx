@@ -29,9 +29,6 @@ const HighlightStyles = styled.div`
     object-fit: cover;
     transition: all 250ms ease-out;
   }
-  /* :hover .highlight__info > .highlight__image__wrapper > .highlight__image {
-    transform: scale(1.1);
-  }
   :hover .highlight__info .highlight__details > .highlight__name {
     color: var(--blue);
   }
