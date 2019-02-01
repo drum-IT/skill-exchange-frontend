@@ -11,7 +11,6 @@ const FeatureListStyles = styled.div`
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fill, 250px);
-    /* grid-template-columns: 1fr 1fr; */
   }
 `;
 

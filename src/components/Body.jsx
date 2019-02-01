@@ -17,11 +17,8 @@ const BodyStyles = styled.div`
     'head'
     'body';
   overflow: hidden;
-  .body__wrapper {
-    overflow: hidden;
-    overflow-y: scroll;
-  }
   .body {
+    overflow-y: scroll;
     grid-area: body;
     display: flex;
     flex-direction: column;
@@ -65,7 +62,7 @@ export default function Body(props) {
   return (
     <BodyStyles>
       <Header user={user} location={location} />
-      <div className="body__wrapper">{content}</div>
+      {content}
     </BodyStyles>
   );
 }

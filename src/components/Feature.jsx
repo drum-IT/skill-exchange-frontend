@@ -5,15 +5,11 @@ const FeatureStyles = styled.div`
   align-items: center;
   cursor: pointer;
   background: white;
-  /* border: 1px solid var(--lightestgrey); */
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   padding: 5px;
   transition: all 100ms;
-  :hover {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  }
   :hover .feature__name {
     color: var(--blue);
   }
