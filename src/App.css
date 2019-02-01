@@ -1,13 +1,17 @@
 :root {
-  --black: #393939;
+  --black: #252528;
   --lightgrey: #b2b2b2;
   --lightestgrey: #e5e5e5;
   --grey: #7f7f7f;
-  --blue: #454ade;
+  --blue: #3066d0;
+  --lightblue: #84adff;
+  --green: #0cce6b;
+  --offwhite: #fbfbfd;
 }
 
 * {
   font-size: 10px;
+  box-sizing: border-box;
 }
 
 h1,

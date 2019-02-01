@@ -9,7 +9,14 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      user: undefined,
+      user: {
+        firstName: faker.name.firstName(),
+        lastName: faker.name.lastName(),
+        email: faker.internet.email(),
+        avatar: faker.image.animals(),
+        title: faker.name.jobTitle(),
+        phone: faker.phone.phoneNumber()
+      },
       path: 'home',
       subpath: undefined,
       location: 'Dashboard'
@@ -22,14 +29,19 @@ class App extends Component {
 
   signUp(user) {
     const newUser = { ...user };
-    newUser.avatar = faker.image.avatar();
+    newUser.avatar = faker.image.animals();
+    newUser.phone = faker.phone.phoneNumber();
+    newUser.title = faker.name.jobTitle();
     this.setState({ path: 'home', subpath: undefined, user: newUser });
   }
 
   signIn(user) {
     const existingUser = { ...user };
     existingUser.firstName = faker.name.firstName();
-    existingUser.avatar = faker.image.avatar();
+    existingUser.lastName = faker.name.firstName();
+    existingUser.avatar = faker.image.animals();
+    existingUser.title = faker.name.jobTitle();
+    existingUser.phone = faker.phone.phoneNumber();
     this.setState({ path: 'home', subpath: undefined, user: existingUser });
   }
 

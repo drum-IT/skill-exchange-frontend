@@ -11,14 +11,15 @@ const FeatureListStyles = styled.div`
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fill, 250px);
+    /* grid-template-columns: 1fr 1fr; */
   }
 `;
 
 export default function FeatureList() {
   const features = [
-    { name: 'New Projects', image: faker.image.fashion() },
-    { name: 'Looking for Members', image: faker.image.people() },
-    { name: 'In Demand Skills', image: faker.image.nature() }
+    { name: 'New Projects', image: faker.image.animals() },
+    { name: 'Looking for Members', image: faker.image.animals() },
+    { name: 'In Demand Skills', image: faker.image.animals() }
   ];
   return (
     <FeatureListStyles>

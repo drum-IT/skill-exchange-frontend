@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import icon from '../assets/images/shuffle.png';
 
 const MenuStyles = styled.div`
   background: var(--black);
@@ -16,7 +17,7 @@ const MenuStyles = styled.div`
   .menu__list__body {
     display: grid;
     grid-auto-flow: row;
-    grid-gap: 5px;
+    grid-gap: 10px;
     margin-top: 10px;
   }
   .logo__container {
@@ -25,10 +26,13 @@ const MenuStyles = styled.div`
     display: flex;
     align-items: center;
   }
-  .logo__container h1 {
+  .logo__text {
     font-size: 1.8rem;
     font-weight: 500;
     padding-left: 30px;
+  }
+  .logo__icon {
+    display: none;
   }
   .menu__list {
     margin-left: 30px;
@@ -64,6 +68,7 @@ const MenuStyles = styled.div`
     border-radius: 5px;
     margin-left: -10px;
     padding-left: 10px;
+    transition: all 100ms;
   }
   .menu__list__item:hover {
     background: rgba(255, 255, 255, 0.2);
@@ -81,16 +86,23 @@ const MenuStyles = styled.div`
     background: white;
   }
   @media only screen and (max-width: 990px) {
-    .logo__container h1 {
-      font-size: 1.4rem;
-      padding-left: 10px;
+    .logo__container {
+      justify-content: center;
+    }
+    .logo__text {
+      display: none;
+    }
+    .logo__icon {
+      display: block;
+      height: 30px;
+      width: 30px;
     }
     .menu__list {
       margin-left: 10px;
     }
     .menu__list__item {
       height: 30px;
-      margin-right: 20px;
+      margin-right: 5px;
       border-radius: 5px;
       margin-left: -5px;
       padding-left: 5px;
@@ -99,12 +111,13 @@ const MenuStyles = styled.div`
 `;
 
 export default function Menu(props) {
-  const { changePath, path, subpath, user, signOut } = props;
+  const { changePath, subpath, user, signOut } = props;
   return (
     <MenuStyles>
       <div className="logo__container">
         <div className="logo">
-          <h1>Skill Exchange</h1>
+          <h1 className="logo__text">Skill Exchange</h1>
+          <img src={icon} alt="Skill Exchange" className="logo__icon" />
         </div>
       </div>
       <div className="menu__list__wrapper">
@@ -121,14 +134,14 @@ export default function Menu(props) {
             <button
               type="button"
               className={`menu__list__item ${subpath === 'projects' ? 'active__item' : undefined}`}
-              onClick={() => changePath('projects', true, 'Project Marketplace')}
+              onClick={() => changePath('projects', true, 'Project Catalog')}
             >
               Projects
             </button>
             <button
               type="button"
               className={`menu__list__item ${subpath === 'skills' ? 'active__item' : undefined}`}
-              onClick={() => changePath('skills', true, 'Skill Marketplace')}
+              onClick={() => changePath('skills', true, 'Skill Catalog')}
             >
               Skills
             </button>

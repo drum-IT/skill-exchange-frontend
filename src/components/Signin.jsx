@@ -31,14 +31,13 @@ export default class Signin extends Component {
   }
 
   render() {
-    const { firstName, lastName, email, password } = this.state;
+    const { email, password } = this.state;
     const { changePath } = this.props;
     return (
       <SignupStyles>
         <form className="signup__form" onSubmit={this.handleSubmit}>
           <div className="form__header">
             <h1>Sign In</h1>
-            {/* <h6>Welcome Back!</h6> */}
           </div>
           <div className="form__input__wrapper">
             <label htmlFor="email" className="form__label form__label--wide">
