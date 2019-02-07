@@ -5,7 +5,7 @@ const HighlightStyles = styled.div`
   /* border-bottom: 1px solid var(--lightestgrey); */
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  width: 250px;
+  width: ${props => props.width || '250px'};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,9 +61,9 @@ const HighlightStyles = styled.div`
 `;
 
 export default function Highlight(props) {
-  const { name, image, members, about, status } = props;
+  const { name, image, members, about, status, width } = props;
   return (
-    <HighlightStyles>
+    <HighlightStyles width={width}>
       <div className="highlight__info">
         <div className="highlight__image__wrapper">
           <img src={image} alt="" className="highlight__image" />
