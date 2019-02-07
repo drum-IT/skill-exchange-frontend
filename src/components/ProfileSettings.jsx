@@ -63,9 +63,7 @@ export default function ProfileSettings(props) {
       <div className="profile__section">
         <div className="profile__section__header">
           <span className="section__header__title">Account Settings</span>
-          <span className="section__header__subtitle">
-            Edit your name, contact details, and notification settings.
-          </span>
+          <span className="section__header__subtitle">Edit your name, and contact details.</span>
         </div>
         <form className="profile__form">
           <div className="profile__form__inputs">

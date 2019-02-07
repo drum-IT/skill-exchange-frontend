@@ -6,6 +6,7 @@ import HighlightList from './HighlightList';
 import Signin from './Signin';
 import Signup from './Signup';
 import Profile from './Profile';
+import Projects from './Projects';
 
 const BodyStyles = styled.div`
   background: var(--offwhite);
@@ -56,6 +57,12 @@ export default function Body(props) {
     content = (
       <div className="body">
         <Profile user={user} />
+      </div>
+    );
+  } else if (subpath === 'projects') {
+    content = (
+      <div className="body">
+        <Projects />
       </div>
     );
   }
